@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, shrink-to-fit=no, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>ReqFire Tutorial</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/simple-sidebar.css" rel="stylesheet">
+    <link href="css/spa-ss.css" rel="stylesheet">
+
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+    <div id="wrapper">
+        <!-- Navbar top -->
+        <!-- https://www.reqfire.com/images/furniture/RR2_75.png -->
+        <nav class="navbar navbar-default navbar-fixed-top">
+          <div class="container-fluid">
+              <div class="collapse navbar-collapse navbar-right" id="bs-example-navbar-collapse-1">
+                   
+              <ul class="nav navbar-nav">
+                  <!--<li><a href="#menu-toggle" class="btn btn-default" id="menu-toggle">Toggle Menu</a></li>
+                  <li>
+                      <a href="#the-default-view"><strong>Getting Started Guide</strong></a>-->
+                  </li>  
+            <li>
+                <a class="navbar-brand" href="#">
+                  <img alt="Brand" src="https://www.reqfire.com/images/furniture/RR2_75.png">
+                </a>
+            </li>   
+              
+              </ul>
+              </div>
+          </div>
+        </nav>
+         <!-- Sidebar -->
+        <div id="sidebar-wrapper">
+            <ul class="sidebar-nav">
+                </li>
+                <li>ReqFire Tutorial</li>    
+                <li>
+                    <a href="#the-default-view">Welcome</a>
+                </li>
+                <li>
+                    <a href="#UC_method">Introduction to Use Cases</a>
+                    <ul>
+                        <li><a href="#why-UC-works">Why UC works</a></li>
+                        <li><a href="#what-UC-model">Modelling with UCs</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#get-set-up">Getting Set Up</a>
+                    <ul>
+                        <li>
+                    <a href="#client-brief">Client Brief</a>
+                        </li>
+                        <li>
+                            <a href="#import-package">Import Previous Work</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#gather-requirements">Analyse Requirements</a>
+                </li>
+                <li>
+                    <a href="#modelling-use-cases">Modelling Use Cases</a>
+                </li>
+                <li>
+                    <a href="#exporting-your-model">Finish your Model</a>
+                </li>
+                
+            </ul>
+        </div>
+        <!-- /#sidebar-wrapper -->
+
+        <!-- Page Content -->
+        <div id="page-content-wrapper">
+            
+            <!-- Use Case Methodology View -->
+            <main role='main'>
+            <div class="container-fluid" id="UC_method">                
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h2 class="rf-h2-title">
+                            Introduction to the Use Case Methodology
+                        </h2>
+                             <p>
+                                 ReqFire is a SaaS solution for creating <a>use case based requirements models.</a>
+                            </p> 
+                        
+                        <h3>What is Use Case Analysis?</h3>
+                        <ul class="rf-ul-body">
+                            <li>Use Case Analysis is a way of organising requirements so they become easier to understand</li>
+                            <li>'Formal' methodology - i.e. it has a specific format</li>
+                            <li>Analysts and Developers know what to expect</li>
+                        </ul>
+                        
+                        <h3>What jobs is the Requirements Model doing?</h3>
+                        <ul class="rf-ul-body">
+                            <li>Capture the complete list of requirements</li>
+                            <li>Provide enough detail so that developers do not guess or assume what to build</li>
+                            <li>Allow the Business to understand and commit to the Requirements</li>
+                            <li>Identify and manage changes</li>
+                        </ul>
+                
+                    </div>
+                </div>
+                <div class="rf-next-section">
+                    <a href="#why-UC-works" class="rf-next-section">Why does UC work? &rarr;</a>
+                </div>
+            </div>
+                
+<!-- Why Does UC work? --> 
+            
+            <div class="container-fluid" id="why-UC-works">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h2>Why does Use Case Analysis work?</h2>
+                        <p>
+                            Use Case Analysis is a simple way to conceptualise your whole model.
+                        </p>
+                        <ul class="rf-ul-body">
+                            <li>It uses a ‘story’ format – characters (Actors) and narrative (Use Cases) and leverages the ‘Narrative Paradigm’.</li>
+                            <li>It provides a mental framework on which the detail can hang.</li>
+                            <li>It uses diagrams to prime the reader before they see the detail.</li>
+                            <li>It has rules to determine if the stories are detailed enough.</li>
+                            <li>It separates the narrative flow from the rules and conditions.</li>
+                        </ul>
+   
+                        </div>
+                    </div>
+                <div class="rf-next-section">
+                    <a href="#what-UC-model" class="rf-next-section">How does UC analysis fit into a requirements model? &rarr;</a>
+                </div>
+                </div>
+                
+<!-- what-UC-model --> 
+            
+            <div class="container-fluid" id="what-UC-model">
+                <div class="row">
+                    <div class="col-lg-12">
+                        
+                        <h2>What do we analyse and model</h2>
+                        <p>In UC analyse we focus on the Use Case and objects that are in that UC. <b>Here are the objects we use:</b></p>
+                        
+                        <div class="panel with-nav-tabs panel-default">
+                            <!-- Nav tabs -->
+                            <div class="panel-heading">
+                            <ul class="nav nav-tabs" role="tablist">
+                                <li role="presentation" class="active">
+                                    <a href="#actor-tab" aria-controls="actor-tab" role="tab" data-toggle="tab">Actors</a>               
+                                </li>
+                                <li role="presentation">
+                                    <a href="#object-tab" aria-controls="object-tab" role="tab" data-toggle="tab">Business Objects</a>      
+                                </li>
+                                <li role="presentation">
+                                    <a href="#packages-tab" aria-controls="packages-tab" role="tab" data-toggle="tab">Packages</a>      
+                                </li>
+                                <li role="presentation">
+                                    <a href="#UC-tab" aria-controls="UC-tab" role="tab" data-toggle="tab">Use Cases</a>      
+                                </li>
+                                <li role="presentation">
+                                    <a href="#interfaces-tab" aria-controls="interfaces-tab" role="tab" data-toggle="tab">Interfaces</a>      
+                                </li>
+                                <li role="presentation">
+                                    <a href="#rules-tab" aria-controls="rules-tab" role="tab" data-toggle="tab">Rules</a>      
+                                </li>
+                                <li role="presentation">
+                                    <a href="#forms-tab" aria-controls="forms-tab" role="tab" data-toggle="tab">Forms</a>      
+                                </li>
+                            </ul>
+                            </div>
+                            <!-- Tab Panes -->
+                            <div class="tab-content">
+                                
+                                <div role="tabpanel" class="tab-pane fade in active" id="actor-tab">People (and external Systems) that want to do something directly with the System.</div>
+                                <div role="tabpanel" class="tab-pane" id="object-tab">Business objects whose state and data is managed or used by the system.</div>
+                                <div role="tabpanel" class="tab-pane" id="packages-tab">Logical groupings of functions relating to Use Cases</div>
+                                <div role="tabpanel" class="tab-pane" id="UC-tab">Stories describing in detail the Actors interactions to achieve a specific goal. Includes:
+                                    <ul>
+                                        <li>Flows:  – paths through a Use Case, usually only one ‘Main Flow’, but there can be ‘Alternative Flows’.</li>
+                                        <li>Steps: Steps in a flow (viewable in activity diagram).</li>
+                                    </ul>
+                                </div>
+                                <div role="tabpanel" class="tab-pane" id="interfaces-tab">An interface to the System, can be a GUI/Web interface, an email format, a SMS etc.</div>
+                                <div role="tabpanel" class="tab-pane" id="rules-tab">Business rules applied during Use Cases.</div>
+                                <div role="tabpanel" class="tab-pane" id="forms-tab">A specific data exchange definition, maybe a web service or a messaging format.</div>
+                            </div>
+                        </div>
+                            <h3>How do objects relate to each other?</h3>
+                            <div class="col-lg-8 col-lg-offset-2">
+                                 <img src="images/what_uc_diagram.png" alt="UC diagram">
+                            </div>
+                        </div>
+                        <div class="rf-next-section">
+                            <a href="#get-set-up" class="rf-next-section">It's time to create your own account and product &rarr;</a>
+                        </div>
+                    </div>
+                    
+                </div>
+           
+                
+
+                <!-- Getting Set up with ReqFire -->
+                <div class="container-fluid" id="get-set-up">                
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h2>Getting Set Up</h2>
+                        <p>
+                            Setting up an account with ReqFire is easy and is currently free for Revium.
+                        </p>
+                        <h3>Example Requirements Model</h3>
+                        <p>
+                            Here is an example output of what we are going to create today:</p>
+                           
+                        <div class="rf-polaroid">
+                            <img src="images/Model_1.png" alt="Model" style="width: 100%;">
+                            <div class="rf-caption">
+                                <p><a>A complete requirements model</a></p>
+                            </div>
+                        </div>
+                    <h3>Create an account and project</h3>
+                        <ul class="rf-ul-body">
+                            <li>
+                            <p>To create an account go to 
+                            <a href="wwww.reqfire.com/register" target="_blank">wwww.reqfire.com/register</a></p></li>
+                            <li><p>Then make sure to view the <a href="www.reqfire.com/welcome/" target="_blank">onboarding slides</a> before starting.</p>
+                            </li>
+                            <li><p>Finally, fill out the details for your project.</p></li>
+                        </ul>
+                        
+                    </div>
+                </div>
+                    <div class="rf-next-section">
+                            <a href="#client-brief" class="rf-next-section">Next up: the client brief &rarr;</a>
+                        </div>
+            </div>
+            
+            <!-- Client briefing -->
+                <div class="container-fluid" id="client-brief">                
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h2>Case Example: Adding a booking form</h2>
+                        
+                        <p>
+                            To demonstrate the app we are going to create a Use Case Package based off a client brief.
+                        </p>                        
+                        
+                    <h3>Client briefing</h3>
+                        <p>
+                            An existing client has asked us to scope and estimate the addition of a booking form on their website and members portal.
+                        </p>
+                        
+                        <p>
+                            From a quick phone call you gather the following information:
+                        </p>
+                        
+                        <ul class="rf-ul-body">
+                            <li>
+                                Your client wants a way for people to book consultations.
+                            </li>
+                            <li>
+                                People should be able to see what times are available before making a booking.
+                            </li>
+                            <li>
+                                Members can book a time from their profile.
+                            </li>
+                            <li>
+                                They prefer to keep the existing interfaces and pages.
+                            </li>
+                            <li>
+                                People who are not members cannot book sessions.
+                            </li>
+                            <li>
+                                People receive a notification once they have booked a session.
+                            </li>
+                        </ul>
+                        <blockquote>
+                            <p><strong>&ldquo;</strong>When we launch the consultation booking feature can we change the header bar part at the top of the page to be more teal but with a gradient that blends slightly into brown but not too dark and more like turquoise meets light green brushed with a blueish tinge but <span style="color: teal;">undeniably teal</span><strong>&rdquo;</strong></p>
+                            <footer>Client requirement</footer>
+                        </blockquote>
+                        <img src="images/vince_vaughn_stock.jpg" style="width: 20%; display: block; margin: auto;" >
+                        
+                        <div class="rf-next-section">
+                            <a href="#import-package" class="rf-next-section">Now let's get started by importing our previous work &rarr;</a>
+                        </div>
+                    
+                    </div>
+                </div>
+            </div>
+                
+<!-- Import -->
+                <div class="container-fluid" id="import-package">                
+                <div class="row">
+                    <div class="col-lg-12">
+                       <h2>Using your previous work and IP</h2>
+                        
+                        <p>
+                            We have previously done work with the client and already have their applications modelled. So the best place to begin is loading in our existing model from our Library.
+                        </p>
+                        
+                        <p>
+                            The library feature is found on your Home page in Recent projects.
+                        </p>
+                        
+                        <ul class="rf-ul-body">
+                            <li>Click on Library.</li>
+                            <li>To import our past work click on the download icon in Basic Web Membership</li>
+                            <li>Now the Web Membership specifications for the client are in our current project.</li> 
+                            <li>This includes our interfaces, forms, rules, and use cases.</li>
+                            
+                        </ul>
+                    <p>
+                        You can use the Library feature to import components from other models. You can also import any similar work from other projects or from a repository of generic packages. This is especially helpful for situations like our example web membership package.
+                    </p>
+                    
+                    <h4>What's in the package?</h4>
+                    <p>
+                        To see what was in the package we just imported navigate to the Model tab in the app. Here you will understand the previous specifications and objects to reuse in our project.
+                    </p>
+                    <p>
+                        This is a good way to store IP within the company and make it easier for people to pick up and understand projects in a standard way.
+                    </p> 
+                        
+                        <div class="rf-next-section">
+                            <a href="#gather-requirements" class="rf-next-section">Now let's get started by analysing our clients' requirements &rarr;</a>
+                        </div>
+                    
+                    </div>
+                </div>
+            </div>
+                
+<!--                Gather Requirements          -->
+                
+                <div class="container-fluid" id="gather-requirements">                
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h2>Gather and Analyse Requirements</h2>
+                        <p>
+                            In this step we are going to load in our previous work with the client. Then we will turn the phone call with the client into traceable requirements.
+                        </p>
+                    
+                    <h3>Gather Requirements</h3>
+                    <p>
+                    Gathering requirements allows you to take advantage of the traceability and approval features in ReqFire. 
+                    </p>
+                    
+                    <ul class="rf-ul-body">
+                        <li>Navigate to the Gather Tab in the app.</li>
+                        <li>Start by adding in the client's requirements.</li>
+                        <li>If it helps start by dragging the Requirement blocks into a hierarchy.</li>
+                        <li>One approach is to organise requirements into topics, items and details.</li>
+                    </ul>
+                    
+                    <h3>Analyse Requirements</h3>
+                    <p>
+                        It's now time to link the analyse the requirements. There are three main goals at this stage:
+                        <ol class="rf-ol-body">
+                            <li><span>1.</span><p>Link the Basic Requirements to existing objects. E.g. The right interface for the requirement.</p></li>
+                            <li><span>2.</span><p>Add new objects to meet the requirements. E.g. New website functionality requires new Business Rules.</p></li>
+                            <li><span>3.</span><p>Get a sense if you have collected enough requirements. E.g. If something could be clarified by a requirement.</p></li>
+                        </ol>
+                    </p>
+                    
+                    <p>
+                        Goals 1 and 2 can be achieved by selecting the icons next to each Basic Requirement and then adding or searching the object. By the end of this process all requirements should be linked with at least one object.
+                    </p>
+                    
+                    </div>
+                </div>
+                 <div class="rf-next-section">
+                            <a href="#modelling-use-cases" class="rf-next-section">Next step: start modelling your Use Cases &rarr;</a>
+                        </div>
+            </div>
+            
+            
+<!-- Modelling Use Cases --> 
+            
+            <div class="container-fluid" id="modelling-use-cases">
+                <!--<p style="padding:1200px;"><</p>-->
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h2>Modelling Your Use Cases</h2>
+                        <p>
+                            Now that we have our objects and use cases it's time to define the flows of the use cases into a meaningful model.
+                        </p>
+                        
+                        <h3>
+                            Packages and Use Cases
+                        </h3>                       
+                        <p>
+                            In the Artefacts tab in Use Cases you will have two packages:</p>
+                        <ul class="rf-ul-body">
+                            <li>Importing the Web Membership library into our project creates a package called 'system'.</li>
+                            <li>The Use Cases you created in the Analysis stage will also create a Package.</li>
+                        </ul>
+                        <p>
+                            We can start modelling our Use Cases by renaming the package to Consultation Booking. (Packages are usually named after the broad function they relate to i.e. Sign-Up, Project Sharing, ...)
+                        </p>
+                        <div class="rf-polaroid">
+                            <img src="images/UC_diagram.png" alt="Model" style="width: 100%; border: #efefef solid 1px;">
+                            <div class="rf-caption">
+                                <p><a>The UC diagram of our booking package</a></p>
+                            </div>
+                        </div>
+                        
+                        <p>
+                            Each Use Case can be filled out to include the other objects.
+                        </p>
+                        <div class="rf-polaroid">
+                            <img src="images/uc_detail.png" alt="Model" style="width: 100%; border: #efefef solid 1px;">
+                            <div class="rf-caption">
+                                <p><a>The UC diagram of our booking package.</a></p>
+                            </div>
+                        </div>
+                        
+                        <p>
+                            The activity diagrams are a useful way to get an overview of the UC and can help with iterating the development your model. 
+                        </p>
+                        <div class="rf-polaroid">
+                            <img src="images/activity_diagram.png" alt="Model" style="width: 100%; border: #efefef solid 1px;">
+                            <div class="rf-caption">
+                                <p><a>The activity diagram for one of our use cases</a></p>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+                
+                <div class="rf-next-section">
+                    <a href="#exporting-your-model" class="rf-next-section">Final steps: exporting, walkthroughs and test-cases &rarr;</a>
+                </div>
+            </div>
+            
+            <!-- Finish -->
+                <div class="container-fluid" id="exporting-your-model">                
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h2>Final steps</h2>
+                        
+                        <p>
+                        Once we have finished modelling there are a number of features in ReqFire to get approval from your client or prepare for development:
+                        <ol class="rf-ol-body">
+                            <li><span>1.</span><p>Create a Release of the model.</p></li>
+                            <li><span>2.</span><p>Walkthrough each Use Case in the model for a sense check and to get approval.</p></li>
+                            <li><span>3.</span><p>Generate test cases from your requirements.</p></li>
+                        </ol>
+                    </p>
+                        <div class="rf-polaroid">
+                            <img src="images/release.png" alt="Model" style="width: 100%; border: #efefef solid 1px;">
+                            <div class="rf-caption">
+                                <p><a>Create a Release</a></p>
+                            </div>
+                        </div>
+                        
+                        <div class="rf-polaroid">
+                            <img src="images/walkthrough.png" alt="Model" style="width: 100%; border: #efefef solid 1px;">
+                            <div class="rf-caption">
+                                <p><a>Walkthrough</a></p>
+                            </div>
+                        </div>
+                        
+                        <div class="rf-polaroid">
+                            <img src="images/auto_test.png" alt="Model" style="width: 100%; border: #efefef solid 1px;">
+                            <div class="rf-caption">
+                                <p><a>Automatically generate test cases</a></p>
+                            </div>
+                        </div>
+                        
+                        <div class="rf-polaroid">
+                            <img src="images/Model_1.png" alt="Model" style="width: 100%;">
+                            <div class="rf-caption">
+                                <p><a>A complete requirements model</a></p>
+                            </div>
+                        </div>
+
+                    
+                    </div>
+                </div>
+            </div>
+                
+<!-- Welcome to ReqFire Tutorial -->                 
+            <div class="container-fluid" id="the-default-view">
+                <!--<p style="padding:1200px;"><</p>-->
+                <div class="row">
+                    <div class="col-lg-12">
+                        <!--<div class="media">
+                        <div class="media media-right">
+                            <img class="media-object" src="images/Ug.png" alt="RF mascot">
+                        </div>
+                        <div class="media-body">-->
+                        <div class="row">
+                        <div class="col-lg-8">
+                        <h1>Introducing ReqFire and <br>Use Case Analysis</h1>
+                        </div>
+                        <div class="col-lg-4"><img class="media-object" src="images/Ug.png" alt="RF mascot">
+                    </div>
+                    </div>
+                        <p style="text-align: center;">Proudly presented by: 
+                            <br>
+                            <em>James Billson - <a>jamesb@reqfire.com</a> </em> &nbsp; | &nbsp; <em> 
+                            Alexander Handley - <a>alexh@reqfire.com</a></em></p>
+                        <br>
+                        <h2>Today we will be going through three things:</h2>
+                        
+                        <ol class="rf-ol-body">
+                            <li><span>1.</span>
+                                <p>Refresher on Use Case Analysis and Requirements Models</p>
+                            </li>
+                            <li><span>2.</span>
+                                <p>An overview of the Requirements Model ReqFire generates</p>
+                            </li>
+                            <li><span>3.</span>
+                                <p>Work through an example project</p>
+                            </li>
+                        </ol>
+                        
+                    </div>
+                        
+                        
+                        
+                    
+                    </div>
+                </div>
+                <div class="rf-next-section">
+                            <a href="#modelling-use-cases" class="rf-next-section">Next step: start modelling your Use Cases &rarr;</a>
+                        </div>
+            </div>           
+            </main>
+        </div>
+        <!-- /#page-content-wrapper -->         
+
+    </div>
+    
+    <!-- /#wrapper -->
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+    
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/spa-js.js"></script>
+
+    <!-- Menu Toggle Script -->
+    <script>
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+    });
+        
+     
+});
+    </script>
+
+</body>
+
+</html>
